@@ -64,7 +64,7 @@ public class TestVWOLogin {
         Assert.assertEquals(errorMessage.getText(),"Your email, password, IP address or location did not match");
     }
 
-    @Test(priority = 2,groups = {"positive","sanity"})
+    @Test(priority = 2,groups = {"positive","sanity","stage"})
     @Description("TC#2 - Verify that with Valid username and valid password, Login is successful")
     public void testValidLogin() throws InterruptedException {
         driver.get("https://app.vwo.com");
