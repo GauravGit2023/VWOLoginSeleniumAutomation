@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -21,14 +22,15 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class TestVWOLogin {
-    ChromeOptions options;
+    //ChromeOptions options;
     WebDriver driver;
 
     @BeforeSuite
     public void setup(){
-        options = new ChromeOptions();
-        options.addArguments("--start-maximised");
-        driver = new ChromeDriver(options);
+//        options = new ChromeOptions();
+//        options.addArguments("--start-maximised");
+//        driver = new ChromeDriver(options);
+        driver = new EdgeDriver();
         // Implicit wait
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
