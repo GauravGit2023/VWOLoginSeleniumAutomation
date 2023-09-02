@@ -71,11 +71,15 @@ public class TestVWOLogin {
     public void testValidLogin() throws InterruptedException {
         driver.get("https://app.vwo.com");
 
+        // previous ones password not working
+        // 93npu2yyb0@esiix.com
+        // Wingify@123
         //<input type="email" class="text-input W(100%)" name="username" id="login-username" data-qa="hocewoqisi">
-        driver.findElement(By.id("login-username")).sendKeys("93npu2yyb0@esiix.com");
+        driver.findElement(By.id("login-username")).sendKeys("vnzbmvd894@moderngate.pw");
+
 
         //<input type="password" class="text-input W(100%)" name="password" id="login-password" data-qa="jobodapuxe">
-        driver.findElement(By.name("password")).sendKeys("Wingify@123");
+        driver.findElement(By.name("password")).sendKeys("testEmail@123");
 
         //<button type="submit" id="js-login-btn" class="btn btn--positive " +
         //  "btn--inverted W(100%) H(48px) Fz(16px)" onclick="login.login(event)" data-qa="sibequkica">
@@ -100,3 +104,7 @@ public class TestVWOLogin {
 // get status
 // git add .
 // SKIP=gitleaks git commit -m "11th August, Fixed report"
+
+// At last remove below code from execute shell to replace install in invoke top level maven
+// export JAVA_HOME=$(C:\Program Files\Java\jdk-11)
+//C:\Program Files\Maven\apache-maven-3.9.4\bin\mvn clean test -DsuiteXmlFile=testng.xml
