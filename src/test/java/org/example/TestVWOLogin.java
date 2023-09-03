@@ -30,7 +30,7 @@ public class TestVWOLogin {
 //        options = new ChromeOptions();
 //        options.addArguments("--start-maximised");
 //        driver = new ChromeDriver(options);
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\gaura\\IdeaProjects\\VWOLoginAutomationSelenium\\Edgedriver\\msedgedriver.exe");
+        //System.setProperty("webdriver.edge.driver", "C:\\Users\\gaura\\IdeaProjects\\VWOLoginAutomationSelenium\\Edgedriver\\msedgedriver.exe");
         driver = new EdgeDriver();
         // Implicit wait
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
