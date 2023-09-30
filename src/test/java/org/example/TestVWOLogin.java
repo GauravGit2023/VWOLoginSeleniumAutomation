@@ -33,7 +33,7 @@ public class TestVWOLogin {
         //System.setProperty("webdriver.edge.driver", "C:\\Users\\gaura\\IdeaProjects\\VWOLoginAutomationSelenium\\Edgedriver\\msedgedriver.exe");
         driver = new EdgeDriver();
         // Implicit wait
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
 
@@ -42,7 +42,7 @@ public class TestVWOLogin {
 
     // Write negative testcase before positive test case so that we do not have to logout
     @Test(priority = 1,groups = {"negative","sanity"})
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.CRITICAL)
     @Description("TC#1 - Verify that with invalid username and valid password, Login is not successful")
     public void testInvalidLogin() throws InterruptedException {
         driver.get("https://app.vwo.com");
